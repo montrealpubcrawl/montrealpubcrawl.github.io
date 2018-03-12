@@ -1,0 +1,105 @@
+@import url("components/navbar.css");
+@import url("components/footer.css");
+
+body {
+  background: #1D1D1D;
+  color: white;
+  font-family: 'Lato', sans-serif;
+}
+h1 {
+  font-size: 50px;
+}
+h3 {
+  font-size: 25px;
+}
+input {
+  background-color: #1D1D1D;
+  font-size: 15px ;
+  font-family: 'Lato', sans-serif;
+  border: none;
+  border-bottom: 1px solid white;
+  opacity: 0.5;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+.indicates-required {
+  display: none;
+}
+#mc_embed_signup_scroll {
+  display: flex;
+  flex-direction: row;
+}
+.required-email, button {
+  display: block;
+}
+.layout-container {
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 500px 1fr 1;
+  padding-top: 100px;
+  justify-content: center;
+}
+.layout-text {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.layout-logo {
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  padding-left: 80px
+}
+.logo img {
+  height: 330px;
+  width: 330px;
+}
+h2 {
+  display: none;
+}
+form input {
+  height: 20px;
+  padding-bottom: 5px;
+  float: left;
+}
+
+/*Mobile Response*/
+@media(max-width: 600px) {
+  .layout-container {
+    display: grid;
+    grid-template-rows: 100%;
+    grid-template-columns: 100%;
+    padding: 10px 20px 10px 10px;
+    text-align: center;
+  }
+  .layout-text {
+    grid-row: 2 / span 1;
+    grid-column: 1 / span 1;
+    height:50%;
+  }
+  .layout-logo {
+    grid-row: 1 / span 1;
+    grid-column: 1 / span 1;
+  }
+  .logo img {
+    height: 280px;
+    width: 280px;
+  }
+  .footer-content{
+    display: block;
+    text-align: center;
+    width: 80%;
+    padding-right: 50px;
+  }
+  form {
+    display: inline-block;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h3 {
+    font-size: 20px;
+  }
+}
+
